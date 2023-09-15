@@ -21,6 +21,10 @@ body{
     background: var(--back-color);
 }
 
+div.all-contents{
+    overflow-x: hidden;
+}
+
 .s1{
     width: 100%;
     height: 70vh;
