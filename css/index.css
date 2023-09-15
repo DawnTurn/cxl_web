@@ -10,7 +10,7 @@
     --primary2: #0074c1;
     --primary3: #00719c;
     --primary4: #00415a;
-    --back-color: #e3f2ff;
+    --back-color: #fafdff;
 }
 
 body{
@@ -111,7 +111,7 @@ body{
     position: absolute;
     z-index: 900;
     width: 85%;
-    bottom: -18%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
@@ -169,10 +169,31 @@ body{
     position: -webkit-sticky;
     position: sticky;
     z-index: 10;
-    margin-top: 19em;
+    margin-top: 17em;
 }
 
+.about-items h2{
+    font-weight: 500;
+    margin-bottom: .5em;
+}
 
+.about-items span{
+    color: var(--primary1);
+}
+
+.about-items p{
+    font-weight: 300;
+    letter-spacing: .8px;
+    line-height: 1.7em;
+}
+
+.about-img{
+    width: 100%;
+}
+
+.about-img img{
+    width: 100%;
+}
 
 
 
