@@ -123,6 +123,19 @@ body{
     background: #f4faff;
     padding: 1.5em 1.3em;
     border-radius: 0.2em;
+    position: relative;
+    overflow: hidden;
+}
+
+.sol::after{
+    content: '';
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    background: #00719c;
+    transform: rotate(45deg);
+    right: -12%;
+    bottom: -23%;
 }
 
 .sol i{
