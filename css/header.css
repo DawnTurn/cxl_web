@@ -61,24 +61,12 @@ nav ul{
 }
 
 nav ul li{
-    opacity: 0;
+    opacity: 1;
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
-}
-
-@keyframes slidein{
-    from{
-        opacity: 0;
-        transform: translateX(70px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
 }
 
 .dim{
