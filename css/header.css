@@ -39,12 +39,15 @@ nav{
     width: 60%;
     background: var(--primary4);
     height: 100vh;
-    transform: translateX(100%);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    pointer-events: none;
     transition: .4s ease-out;
 }
 
 .open-nav{
-    transform: translateX(0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 nav ul{
