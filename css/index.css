@@ -10,7 +10,7 @@
     --primary2: #0074c1;
     --primary3: #00719c;
     --primary4: #00415a;
-    --back-color: #fafdff;
+    --back-color: #ffffff;
 }
 
 body{
@@ -169,7 +169,7 @@ body{
     position: -webkit-sticky;
     position: sticky;
     z-index: 10;
-    margin-top: 17em;
+    margin-top: 16em;
 }
 
 .about-items{
