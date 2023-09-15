@@ -226,6 +226,9 @@ body{
 .about-img img{
     width: 100%;
     border-radius: .4em;
+    height: 25em;
+    object-fit: cover;
+    object-position: left;
 }
 
 
