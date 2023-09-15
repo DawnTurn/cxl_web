@@ -32,7 +32,7 @@ header h1 span{
 }
 
 nav{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 999;
@@ -111,12 +111,6 @@ nav ul li a{
 
 .line3{
     width: 1.5em;
-}
-
-.toggle{
-    position: fixed;
-    right: 2%;
-    top: 2%;
 }
 
 .toggle .line1{
