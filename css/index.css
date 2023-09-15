@@ -15,7 +15,7 @@
 
 body{
     background: var(--back-color);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .s1{
