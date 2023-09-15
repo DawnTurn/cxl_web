@@ -72,7 +72,7 @@ body{
 
 .hero-contents{
     text-align: center;
-    margin-bottom: 6em;
+    margin-bottom: 5em;
 }
 
 .hero-contents h1{
@@ -153,6 +153,9 @@ body{
     color: white;
 }
 
+
+/* second-page - about-page */
+
 .s2{
     position: -webkit-sticky;
     position: sticky;
@@ -196,7 +199,7 @@ body{
 .about-items button{
     padding: 1em 1.5em;
     border: none;
-    border-radius: .3em;
+    border-radius: .2em;
     background: #00000028;
     cursor: pointer;
     transition: .3s;
@@ -219,12 +222,136 @@ body{
     object-position: left;
 }
 
+/* third-section -- services */
+
+.s3{
+    background: #00212e0e;
+    padding: 2em 0;
+    margin-top: 2em;
+    position: relative;
+}
+
+.services{
+    z-index: 10;
+}
+
+.services-heading-content h2{
+    font-weight: 500;
+    margin-bottom: .5em;
+    position: relative;
+}
+
+.services-heading-content h2 span{
+    color: var(--primary1);
+}
+
+.s3::before{
+    content: '';
+    position: absolute;
+    width: 2.5em;
+    height: 5em;
+    top: 1%;
+    left: 1%;
+    background: #ffffff;
+    transform: skewY(30deg);
+}
+
+.services-heading-content p{
+    font-weight: 300;
+    letter-spacing: .8px;
+    line-height: 1.7em;
+    font-size: .8rem;
+    margin-bottom: 1em;
+}
+
+.services-heading-btn button{
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: .2em;
+    background: var(--primary4);
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+
+.services-heading-btn button:hover{
+    background: var(--primary1);
+}
 
 
+.services-heading{
+    margin-bottom: 3em;
+}
 
+.services-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
+.services-info{
+    width: 100%;
+    padding: 2.5em 2em;
+    border-bottom: 3px solid var(--primary1);
+    background: #f1f6f9;
+    transition: .3s;
+}
 
+.services-infos{
+    background: url(../images/truck-with-white-trailer-that-says-scania-side.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: .1em;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.228);
+}
 
+.plane{
+    background: url(../images/airplane-taking-off-airport-road.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ship{
+    background: url(../images/shipping-industry-carries-cargo-large-container-ships-generative-ai.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.services-info:hover{
+    background: #002c3dca;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.services-info i{
+    font-size: 2.5rem;
+    color: var(--primary1);
+}
+
+.services-info h2{
+    font-weight: 500;
+    margin: .5em 0;
+}
+
+.services-info p{
+    font-weight: 300;
+    letter-spacing: .8px;
+    line-height: 1.7em;
+    font-size: .8rem;
+    margin-bottom: 1em;
+}
+
+.services-info ul{
+    padding: 0 1em;
+}
+
+.services-info ul li{
+    font-weight: 400;
+    letter-spacing: .8px;
+    font-size: .8rem;
+    margin-bottom: .5em;
+}
 
 @media screen and (max-width: 320px){
     .solutions{
