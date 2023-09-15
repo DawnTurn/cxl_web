@@ -13,6 +13,10 @@
     --back-color: #ffffff;
 }
 
+html{
+    width: 100vw;
+}
+
 body{
     background: var(--back-color);
     overflow-x: hidden;
