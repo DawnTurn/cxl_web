@@ -21,7 +21,6 @@ body{
 .s1{
     height: 70vh;
     position: relative;
-
 }
 
 .s1::after{
@@ -104,4 +103,9 @@ body{
     border-radius: .3em;
     color: white;
     background: var(--primary2);
+}
+
+.solutions{
+    position: absolute;
+    z-index: 999;
 }
