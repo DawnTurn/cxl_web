@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --primary1: #00bbff;
+    --primary2: #0074c1;
+    --primary3: #00719c;
+    --primary4: #00415a;
+    --back-color: #e3f2ff;
+}
+
+body{
+    background: var(--back-color);
+    /* overflow-x: hidden; */
+}
+
+.s1{
+    height: 70vh;
+    position: relative;
+
+}
+
+.s1::after{
+    content: '';
+    position: absolute;
+    width: 250%;
+    height: 100%;
+    background: var(--back-color);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 45%);
+    z-index: 9;
+    border-radius: 50%;
+}
+
+.carousel-container{
+    height: 100%;
+    display: flex;
+}
+
+.c1{
+    background: linear-gradient(0deg, #01426da2, #01426da2), url(../images/aerial-view-container-cargo-ship-sea.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1em;
+}
+
+.hero-contents{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.hero-contents h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.hero-contents p{
+    font-weight: 300;
+    font-size: .9rem;
+    margin: 1em 0;
+}
+
+.hero-contents button{
+    font-size: 1rem;
+    padding: .7em 1.5em;
+    border: none;
+    border-radius: .3em;
+    color: white;
+    background: var(--primary2);
+}

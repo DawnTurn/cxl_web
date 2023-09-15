@@ -1,0 +1,132 @@
+:root{
+    --primary1: #00bbff;
+    --primary2: #0074c1;
+    --primary3: #00719c;
+    --primary4: #002743;
+    --back-color: #e3f2ff;
+}
+
+header{
+    padding: .7em 1em;
+    background: var(--primary4);
+}
+
+header h1{
+    color: white;
+    font-weight: 500;
+}
+
+header h1 span{
+    color: var(--primary1);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 60%;
+    background: var(--primary4);
+    height: 100vh;
+    transform: translateX(100%);
+    transition: .4s ease-out;
+}
+
+.open-nav{
+    transform: translateX(0);
+}
+
+nav ul{
+    margin-top: 5.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    list-style-type: none;
+    padding: 0 2em;
+    text-align: center;
+}
+
+nav ul li{
+    opacity: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes slidein{
+    from{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.dim{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.73);
+    z-index: 88;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.show-dim{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    padding: .7em;
+    border-radius: .2em;
+    z-index: 999;
+}
+
+.line1, .line2, .line3{
+    background: #fff;
+    width: 2.3em;
+    height: 2px;
+    border-radius: .5em;
+    transition: .3s;
+}
+
+.line1{
+    width: 1.5em;
+    align-self: end;
+}
+
+.line3{
+    width: 1.5em;
+}
+
+.toggle .line1{
+    width: 2em;
+    transform: translateY(8px) rotate(135deg);
+    align-self: unset;
+}
+
+.toggle .line2{
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.toggle .line3{
+    width: 2em;
+    transform: translateY(-8px) rotate(-135deg);
+}
