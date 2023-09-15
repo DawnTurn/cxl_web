@@ -13,16 +13,8 @@
     --back-color: #ffffff;
 }
 
-html{
-    overflow-x: hidden;
-}
-
 body{
     background: var(--back-color);
-}
-
-div.all-contents{
-    overflow-x: hidden;
 }
 
 .s1{
@@ -36,19 +28,6 @@ div.all-contents{
     height: 100%;
     display: flex;
     position: relative;
-}
-
-.s1::after{
-    content: '';
-    position: absolute;
-    width: 230%;
-    height: 60%;
-    background: var(--back-color);
-    top: 72%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 9;
-    border-radius: 50%;
 }
 
 .container{
