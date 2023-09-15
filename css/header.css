@@ -7,12 +7,12 @@
 }
 
 header{
-    padding: .7em 1em;
     background: var(--primary4);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 999;
+    width: 100%;
 }
 
 header h1{
