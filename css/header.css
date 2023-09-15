@@ -29,39 +29,34 @@ header h1 span{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .7em 1em;
 }
 
 nav{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 110%;
+    right: 3%;
     z-index: 999;
-    width: 60%;
+    width: 50%;
     background: var(--primary4);
-    height: 100vh;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    pointer-events: none;
+    border-radius: .5em;
     transition: .4s ease-out;
+    transform: translateX(80px) translateY(-200px) scale(0);
 }
 
 .open-nav{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transform: unset;
 }
 
 nav ul{
-    margin-top: 5.5em;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    justify-content: center;
+    gap: 2.5em;
+    height: 100%;
     list-style-type: none;
-    padding: 0 2em;
+    padding: 1em 0; 
     text-align: center;
-}
-
-nav ul li{
-    opacity: 1;
 }
 
 nav ul li a{
@@ -78,8 +73,8 @@ nav ul li a{
     background: rgba(0, 0, 0, 0.73);
     z-index: 901;
     opacity: 0;
-    pointer-events: none;
     transition: .2s;
+    pointer-events: none;
 }
 
 .show-dim{
