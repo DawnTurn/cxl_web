@@ -9,6 +9,10 @@
 header{
     padding: .7em 1em;
     background: var(--primary4);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 header h1{
@@ -31,7 +35,7 @@ nav{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 999;
     width: 60%;
     background: var(--primary4);
     height: 100vh;
@@ -81,7 +85,7 @@ nav ul li a{
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.73);
-    z-index: 88;
+    z-index: 901;
     opacity: 0;
     pointer-events: none;
     transition: .2s;
