@@ -20,25 +20,26 @@ body{
 
 .s1{
     height: 70vh;
+    overflow-x: hidden;
+}
+
+.carousel-container{
+    height: 100%;
+    display: flex;
     position: relative;
 }
 
 .s1::after{
     content: '';
     position: absolute;
-    width: 250%;
-    height: 100%;
+    width: 230%;
+    height: 60%;
     background: var(--back-color);
-    top: 45%;
+    top: 72%;
     left: 50%;
-    transform: translate(-50%, 45%);
+    transform: translate(-50%, 0);
     z-index: 9;
     border-radius: 50%;
-}
-
-.carousel-container{
-    height: 100%;
-    display: flex;
 }
 
 .c1{
@@ -109,9 +110,9 @@ body{
     position: absolute;
     z-index: 900;
     width: 85%;
-    bottom: -31%;
+    bottom: -17%;
     left: 50%;
-    transform: translate(-50%, 31%);
+    transform: translate(-50%, 0);
     display: flex;
     flex-direction: column;
 }
