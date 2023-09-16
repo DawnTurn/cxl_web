@@ -99,7 +99,7 @@ body{
     position: absolute;
     z-index: 900;
     width: 85%;
-    top: 66%;
+    top: 69%;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
@@ -225,8 +225,8 @@ body{
 /* third-section -- services */
 
 .s3{
-    background: #00212e0e;
-    padding: 2em 0;
+    background: #00212e12;
+    padding: 3em 0;
     margin-top: 2em;
     position: relative;
 }
@@ -250,9 +250,20 @@ body{
     position: absolute;
     width: 2.5em;
     height: 5em;
-    top: 1%;
+    top: 3%;
     left: 1%;
     background: #ffffff;
+    transform: skewY(30deg);
+}
+
+.s3::after{
+    content: '';
+    position: absolute;
+    width: 2.5em;
+    height: 5em;
+    top: 50%;
+    right: 1%;
+    background: var(--primary4);
     transform: skewY(30deg);
 }
 
@@ -262,6 +273,7 @@ body{
     line-height: 1.7em;
     font-size: .8rem;
     margin-bottom: 1em;
+    position: relative;
 }
 
 .services-heading-btn button{
@@ -351,7 +363,88 @@ body{
     letter-spacing: .8px;
     font-size: .8rem;
     margin-bottom: .5em;
+    color: #00bbff;
 }
+
+.services-info ul span{
+    color: black;
+}
+
+.services-info:hover span{
+    color: white;
+}
+
+
+/* fourth section - goals */
+
+.s4{
+    background: linear-gradient(0deg, #f9fcffe6, #f9fcffe6), url(../images/SL-070722-51460-25.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2em 0;
+}
+
+.c6-heading h2{
+    font-weight: 500;
+    margin-bottom: .5em;
+    position: relative;
+    text-align: center;
+}
+
+.c6-heading h2 span{
+    color: var(--primary1);
+}
+
+.c6-heading p{
+    font-weight: 300;
+    letter-spacing: .8px;
+    line-height: 1.7em;
+    font-size: .8rem;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.goals-items{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.goals-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.goals-infos i{
+    font-size: 2.5rem;
+    color: var(--primary1);
+    margin-bottom: .2em;
+}
+
+.goals-infos h1{
+    color: var(--primary3);
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: .1em;
+}
+
+.goals-infos h3{
+    font-weight: 500;
+    margin-bottom: .4em;
+}
+
+.goals-infos p{
+    font-weight: 300;
+    letter-spacing: .8px;
+    font-size: .8rem;
+}
+
+
+
+
+
 
 @media screen and (max-width: 320px){
     .solutions{
