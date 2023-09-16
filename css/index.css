@@ -378,7 +378,7 @@ body{
 /* fourth section - goals */
 
 .s4{
-    background: linear-gradient(0deg, #f9fcffe6, #f9fcffe6), url(../images/SL-070722-51460-25.jpg);
+    background: linear-gradient(0deg, #f9fcffe6, #f9fcffe6), url(../images/SL-070722-51460-25.jpeg);
     background-size: cover;
     background-position: center;
     padding: 2em 0;
@@ -420,7 +420,7 @@ body{
 .goals-infos i{
     font-size: 2.5rem;
     color: var(--primary1);
-    margin-bottom: .2em;
+    margin-bottom: .1em;
 }
 
 .goals-infos h1{
