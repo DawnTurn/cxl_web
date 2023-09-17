@@ -36,7 +36,7 @@ body{
 }
 
 .c1{
-    background: linear-gradient(0deg, #01426da2, #01426da2), url(../images/aerial-view-container-cargo-ship-sea.jpg);
+    background: linear-gradient(0deg, #01426da2, #01426da2), url(../images/cargo-ship-sea.jpeg);
     background-size: cover;
     background-position: center;
     min-width: 100%;
@@ -48,7 +48,7 @@ body{
 }
 
 .c2{
-    background: linear-gradient(0deg, #01426d99, #01426da2), url(../images/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative.jpeg);
+    background: linear-gradient(0deg, #01426d99, #01426da2), url(../images/logistics-transportation-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative.jpeg);
     background-size: cover;
     background-position: center;
     min-width: 100%;
@@ -60,7 +60,7 @@ body{
 }
 
 .c3{
-    background: linear-gradient(0deg, #01426d99, #01426da2), url(../images/abundant-crates-stack-cardboard-filled-warehouse-generated-by-ai.jpg);
+    background: linear-gradient(0deg, #01426d99, #01426da2), url(../images/abundant-crates-cardboard-filled-warehouse-generated-by-ai.jpeg);
     background-size: cover;
     background-position: center;
     min-width: 100%;
@@ -380,7 +380,7 @@ body{
 .s4{
     padding: 2em 0;
     color: white;
-    background: linear-gradient(0deg, #002743e0, #002743e0), url(../images/interior-large-logistics-warehouse-ai-generative.jpeg);
+    background: linear-gradient(0deg, #002743e0, #002743e0), url(../images/logistics-warehouse-ai-generative.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -449,6 +449,72 @@ body{
     margin-top: 2em;
 }
 
+
+/* fifth section - goals */
+
+.s5{
+    background: linear-gradient(0deg, #f9fcffe6, #f9fcffe6), url(../images/map.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 2em 0;
+}
+
+.c7-heading h2{
+    font-weight: 500;
+    margin-bottom: .5em;
+    position: relative;
+    text-align: center;
+}
+
+.c7-heading h2 span{
+    color: var(--primary1);
+}
+
+.c7-heading p{
+    font-weight: 300;
+    letter-spacing: .8px;
+    line-height: 1.7em;
+    font-size: var(--paragraph-size);
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.goals-items{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.goals-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.goals-infos i{
+    font-size: 2.5rem;
+    color: var(--primary1);
+    margin-bottom: .1em;
+}
+
+.goals-infos h1{
+    color: var(--primary3);
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: .1em;
+}
+
+.goals-infos h3{
+    font-weight: 500;
+    margin-bottom: .4em;
+}
+
+.goals-infos p{
+    font-weight: 300;
+    letter-spacing: .8px;
+    font-size: var(--paragraph-size);
+}
 
 /* testimonials-section */
 
@@ -570,72 +636,6 @@ body{
     top: 50%;
     right: -8%;
     transform: translate(-8%, -50%);
-}
-
-/* fifth section - goals */
-
-.s5{
-    background: linear-gradient(0deg, #f9fcffe6, #f9fcffe6), url(../images/SL-070722-51460-25.jpeg);
-    background-size: cover;
-    background-position: center;
-    padding: 2em 0;
-}
-
-.c7-heading h2{
-    font-weight: 500;
-    margin-bottom: .5em;
-    position: relative;
-    text-align: center;
-}
-
-.c7-heading h2 span{
-    color: var(--primary1);
-}
-
-.c7-heading p{
-    font-weight: 300;
-    letter-spacing: .8px;
-    line-height: 1.7em;
-    font-size: var(--paragraph-size);
-    margin-bottom: 3em;
-    text-align: center;
-}
-
-.goals-items{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
-
-.goals-content{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
-
-.goals-infos i{
-    font-size: 2.5rem;
-    color: var(--primary1);
-    margin-bottom: .1em;
-}
-
-.goals-infos h1{
-    color: var(--primary3);
-    font-weight: 400;
-    font-size: 2rem;
-    margin-bottom: .1em;
-}
-
-.goals-infos h3{
-    font-weight: 500;
-    margin-bottom: .4em;
-}
-
-.goals-infos p{
-    font-weight: 300;
-    letter-spacing: .8px;
-    font-size: var(--paragraph-size);
 }
 
 /* sixth section - contac */
