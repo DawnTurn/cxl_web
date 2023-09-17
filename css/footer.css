@@ -94,13 +94,14 @@ footer{
 }
 
 .footer-contents{
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 
 .copyright{
     text-align: center;
     font-weight: 300;
     position: relative;
+    font-size: .9rem;
 }
 
 .copyright::after{

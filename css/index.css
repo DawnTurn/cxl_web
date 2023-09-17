@@ -11,6 +11,7 @@
     --primary3: #00719c;
     --primary4: #002743;
     --back-color: #ffffff;
+    --paragraph-size: .8rem;
 }
 
 body{
@@ -138,7 +139,7 @@ body{
 }
 
 .sol-content p{
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     font-weight: 300;
     margin-bottom: .7em;
 }
@@ -192,7 +193,7 @@ body{
     font-weight: 300;
     letter-spacing: .8px;
     line-height: 1.7em;
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     margin-bottom: .8em;
 }
 
@@ -271,7 +272,7 @@ body{
     font-weight: 300;
     letter-spacing: .8px;
     line-height: 1.7em;
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     margin-bottom: 1em;
     position: relative;
 }
@@ -350,7 +351,7 @@ body{
     font-weight: 300;
     letter-spacing: .8px;
     line-height: 1.7em;
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     margin-bottom: 1em;
 }
 
@@ -361,7 +362,7 @@ body{
 .services-info ul li{
     font-weight: 400;
     letter-spacing: .8px;
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     margin-bottom: .5em;
     color: #00bbff;
 }
@@ -395,7 +396,7 @@ body{
 }
 
 .c6-header button{
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     padding: .7em 1.5em;
     border: none;
     border-radius: .3em;
@@ -444,13 +445,132 @@ body{
     font-weight: 200;
     letter-spacing: .8px;
     line-height: 1.7em;
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     margin-top: 2em;
 }
 
 
+/* testimonials-section */
 
+.s-testimonials{
+    padding: 2em 0 3em;
+    background: #00212e12;
+}
 
+.t-heading h2{
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.t-heading h2 span{
+    color: var(--primary1);
+}
+
+.t-heading p{
+    font-size: var(--paragraph-size);
+    font-weight: 300;
+    letter-spacing: .8px;
+    line-height: 1.7em;
+}
+
+.t-heading{
+    margin-bottom: 4em;
+}
+
+.testimonial-container{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.test-wrapper{
+    overflow: hidden;
+    width: 100%;
+}
+
+.testimonial-carousel{
+    width: 100%;
+    display: flex;
+}
+
+.testimonial{
+    min-width: 100%;
+    height: 100%;
+    padding: 0 1.5em;
+    background: #002743;
+    color: white;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .3em;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.profile-img{
+    width: 5em;
+    height: 5em;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-content h3{
+    font-weight: 500;
+}
+
+.profile-content p{
+    font-size: .9rem;
+    color: var(--primary1);
+}
+
+.profile{
+    margin-bottom: 1em;
+}
+
+.testimonial p{
+    font-size: var(--paragraph-size);
+    font-weight: 300;
+    letter-spacing: .8px;
+    line-height: 1.7em;
+}
+
+.testimonial-container i{
+    font-size: 2rem;
+    padding: .2em;
+    background: white;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.testimonial-container i:hover{
+    background: var(--primary1);
+    color: white;
+}
+
+.bx-chevron-left{
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    transform: translate(-8%, -50%);
+}
+
+.bx-chevron-right{
+    position: absolute;
+    top: 50%;
+    right: -8%;
+    transform: translate(-8%, -50%);
+}
 
 /* fifth section - goals */
 
@@ -476,7 +596,7 @@ body{
     font-weight: 300;
     letter-spacing: .8px;
     line-height: 1.7em;
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     margin-bottom: 3em;
     text-align: center;
 }
@@ -515,7 +635,7 @@ body{
 .goals-infos p{
     font-weight: 300;
     letter-spacing: .8px;
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
 }
 
 /* sixth section - contac */
@@ -538,7 +658,7 @@ body{
 }
 
 .contact p{
-    font-size: .8rem;
+    font-size: var(--paragraph-size);
     font-weight: 300;
     margin-bottom: 1em;
 }
@@ -559,6 +679,73 @@ body{
 .contact button{
     padding: 1em 2em;
     margin-top: .8em;
+    background: var(--primary1);
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: .1em;
+}
+
+
+/* seventh section - tracking item */
+
+.s7{
+    padding: 2em 0;
+    position: relative;
+}
+
+.track-container{
+    width: 95%;
+    margin: 0 auto;
+    background: #e0e4ec;
+    padding: 1.5em 1em;
+    text-align: center;
+}
+
+.track-container::after{
+    content: "";
+    width: 2.5em;
+    height: 5em;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    background: var(--primary4);
+    transform: skewY(40deg);
+}
+
+.track-container h2{
+    font-weight: 500;
+}
+
+.track-container h2 span{
+    color: var(--primary1);
+}
+
+.track-container p{
+    font-size: var(--paragraph-size);
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.input-container{
+    width: 100%;
+}
+
+.input-container input{
+    width: 100%;
+    padding: 1em;
+    background: white;
+    border: none;
+    border-radius: .2em;
+    margin-bottom: 1em;
+}
+
+.input-container input:focus{
+    outline: 1px solid #00bbff;
+}
+
+.input-container button{
+    padding: .8em 2em;
     background: var(--primary1);
     border: none;
     cursor: pointer;
