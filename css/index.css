@@ -10,7 +10,7 @@
     --primary2: #0074c1;
     --primary3: #00719c;
     --primary4: #002743;
-    --back-color: #ffffff;
+    --back-color: #f9fcff;
     --paragraph-size: .8rem;
 }
 
@@ -302,6 +302,12 @@ body{
     gap: 2em;
 }
 
+.flex1{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .services-info{
     width: 100%;
     padding: 2.5em 2em;
@@ -378,7 +384,7 @@ body{
 
 /* fourth section - goals */
 .s4{
-    padding: 2em 0;
+    padding: 4em 0;
     color: white;
     background: linear-gradient(0deg, #002743e0, #002743e0), url(../images/logistics-warehouse-ai-generative.jpeg);
     background-size: cover;
@@ -402,10 +408,16 @@ body{
     border-radius: .3em;
     color: white;
     background: var(--primary1);
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 
 .choose{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.flex2{
     display: flex;
     flex-direction: column;
     gap: 3em;
@@ -420,6 +432,17 @@ body{
 .choose-contents a h3{
     font-weight: 400;
     position: relative;
+}
+
+.choose-contents a h3{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.choose-contents a h3 i{
+    font-size: 1rem;
+    color: var(--primary1);
 }
 
 .choose-contents h3::after{
@@ -521,6 +544,24 @@ body{
 .s-testimonials{
     padding: 2em 0 3em;
     background: #00212e12;
+    position: relative;
+}
+
+.s-testimonials::before {
+    content: '';
+    position: absolute;
+    width: 2.5em;
+    height: 5em;
+    top: 3%;
+    left: 1%;
+    background: #ffffff;
+    transform: skewY(30deg);
+}
+
+.t-heading{
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
 }
 
 .t-heading h2{
@@ -753,8 +794,6 @@ body{
     border-radius: .1em;
 }
 
-
-
 @media screen and (max-width: 320px){
     .solutions{
         display: none;
@@ -762,5 +801,222 @@ body{
 
     .s2{
         margin-top: 2em;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .hero-contents h1{
+        font-size: 2.3rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .solutions{
+        flex-direction: row;
+    }
+
+    .container{
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .s2{
+        margin-top: 9em;
+    }
+
+    .about-items{
+        width: 90%;
+        margin: 0 auto 3em;
+    }
+
+    .about-items h2{
+        font-size: 1.9rem;
+    }
+
+    .about-items p{
+        font-size: .85rem;
+        margin-bottom: 1.5em;
+    }
+
+    .about-img img{
+        height: 30em;
+    }
+
+    .s3{
+        overflow: hidden;
+    }
+
+    .services-heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .services-heading-content{
+        width: 65%;
+    }
+
+    .c5{
+        z-index: 1;
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    .skew-c{
+        position: absolute;
+        width: 15em;
+        height: 25em;
+        top: -15%;
+        right: 10%;
+        background: #f9fcff;
+        transform: skewY(30deg);
+    }
+
+    .services-heading-content h2{
+        font-size: 1.9rem;
+    }
+
+    .services-heading-content p{
+        font-size: .85rem;
+    }
+
+    .flex1{
+        flex-direction: row;
+    }
+
+    .services-heading-btn button{
+        padding: 1.2em 2.5em;
+    }
+
+    .services-info{
+        height: 100%;
+    }
+
+    .services-info p{
+        font-size: .85rem;
+    }
+
+    .plane, .land{
+        width: 50%;
+    }
+
+    .ship{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .flex2{
+        flex-direction: row;
+    }
+
+    .choose-contents{
+        width: 42%;
+        margin: 0 auto;
+    }
+
+    .choose-contents p{
+        font-size: .85rem;
+    }
+
+    .c6-heading h2 {
+        font-size: 1.9rem;
+        width: 80%;
+        font-weight: 500;
+        margin-bottom: .5em;
+        position: relative;
+    }
+
+    .c6-heading h2 span {
+        color: var(--primary1);
+    }
+
+    .c6-header button {
+        padding: 1.1em 2.5em;
+        font-size: .9rem;
+        border-radius: .1em;
+        margin-bottom: 4em;
+    }
+
+    .c7-heading h2{
+        font-size: 1.9rem;
+    }
+
+    .c7-heading p{
+        font-size: .85rem;
+        width: 80%;
+        margin: 0 auto 3em;
+    }
+
+    .goals-content{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .goals-infos{
+        width: 40%;
+    }
+
+    .s5{
+        padding: 4em 0;
+    }
+
+    .s-testimonials{
+        overflow: hidden;
+    }
+
+    .t-heading h2{
+        font-size: 1.9rem;
+    }
+
+    .t-heading p{
+        font-size: .85rem;
+    }
+
+    .testimonial-container{
+        width: 70%;
+    }
+
+    .bx-chevron-left {
+        left: -12%;
+    }
+
+    .bx-chevron-right {
+        right: -13%;
+    }
+
+    .s6{
+        padding: 4em 0;
+    }
+
+    .contact{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contact h2{
+        font-size: 2.4rem;
+    }
+
+    .s7{
+        padding: 3em 0;
+    }
+
+    .track-container{
+        width: 80%;
+        padding: 1.5em 2em;
+    }
+
+    .track-container h2{
+        font-size: 1.9rem;
+        margin-bottom: .2em;
+    }
+
+    .track-container p{
+        font-size: .85rem;
+    }
+
+    .track-container::after{
+        right: 10%;
     }
 }
