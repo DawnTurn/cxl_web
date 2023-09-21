@@ -157,12 +157,6 @@ body{
 
 /* second-page - about-page */
 
-.s2{
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 10;
-}
-
 .about-items{
     margin-bottom: 3em;
 }
@@ -181,7 +175,7 @@ body{
     top: -10%;
     left: -3%;
     background: #00000017;
-    transform: skewY(30deg);
+    transform: skewY(40deg);
 }
 
 .about-items span{
@@ -216,7 +210,7 @@ body{
 
 .about-img img{
     width: 100%;
-    border-radius: .4em;
+    border-radius: .2em;
     height: 20em;
     object-fit: cover;
     object-position: left;
@@ -253,7 +247,7 @@ body{
     top: 3%;
     left: 1%;
     background: #ffffff;
-    transform: skewY(30deg);
+    transform: skewY(40deg);
 }
 
 .s3::after{
@@ -730,7 +724,7 @@ body{
 /* seventh section - tracking item */
 
 .s7{
-    padding: 2em 0;
+    padding: 2em 0 1em;
     position: relative;
     margin-top: 15em;
 }
@@ -741,6 +735,7 @@ body{
     background: #e0e4ec;
     padding: 1.5em 1em;
     text-align: center;
+    position: relative;
 }
 
 .track-container::after{
@@ -748,8 +743,8 @@ body{
     width: 2.5em;
     height: 5em;
     position: absolute;
-    top: 10%;
-    right: 2%;
+    top: 5%;
+    right: -5%;
     background: var(--primary4);
     transform: skewY(40deg);
 }
@@ -817,12 +812,12 @@ body{
     }
 
     .container{
-        width: 768px;
+        max-width: 768px;
         margin: 0 auto;
     }
 
     .s7{
-        margin-top: 4em;
+        margin-top: 5em;
     }
 
     .about-items{
@@ -1015,8 +1010,173 @@ body{
     .track-container p{
         font-size: .85rem;
     }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container{
+        max-width: 1200px;
+    }
+
+    .s1{
+        height: 80vh;
+    }
+
+    .hero-container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .hero-contents{
+        text-align: left;
+        width: 100%;
+        padding: 0 2em;
+    }
+
+    .c1, .c2, .c3{
+        display: unset;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    .c1{
+        background: linear-gradient(to right, #01426def, #01426dca, #01426d73, #01426d34, #01426d00, #01426d00), url(../images/cargo-ship-sea.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .c2{
+        background: linear-gradient(to right, #01426d, #01426df1, #01426df1, #01426dc0, #01426d68, #01426d34, #01426d12, #01426d00), url(../images/logistics-transportation-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .c3{
+        background: linear-gradient(to right, #01426d, #01426dde, #01426d8f, #01426d4b, #01426d4b, #01426d4b), url(../images/abundant-crates-cardboard-filled-warehouse-generated-by-ai.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-contents h1{
+        margin: unset;
+        width: 65%;
+        font-size: 3.3rem;
+    }
+
+    .hero-contents p{
+        font-size: 1.2rem;
+        margin: 1em 0 1.5em;
+    }
+
+    .hero-contents button{
+        padding: 1em 2.5em;
+        cursor: pointer;
+    }
+
+    .solutions{
+        top: 81%;
+        width: 1020px;
+    }
+
+    .sol{
+        padding: 2em 2.5em;
+    }
+
+    .sol-content h3{
+        font-size: 1.4rem;
+    }
+
+    .sol i{
+        font-size: 2.8rem;
+    }
+
+    .s7{
+        margin-top: 6em;
+    }
+
+    .track-container{
+        width: 65%;
+        padding: 2.5em;
+    }
 
     .track-container::after{
-        right: 10%;
+        right: -2%;
     }
+
+    .track-container h2{
+        font-size: 2rem;
+    }
+
+    .track-container p{
+        font-size: .9rem;
+    }
+
+    .input-container button{
+        padding: 1em 2.5em;
+        font-size: .9rem;
+        margin-top: .7em;
+    }
+
+    .c4{
+        display: flex;
+        align-items: center;
+        gap: 6em;
+        padding: 3em 0 5em;
+    }
+
+    .about-items{
+        width: 45%;
+        margin: 0;
+    }
+
+    .about-items h2{
+        width: 90%;
+        font-size: 2.1rem;
+    }
+
+    .about-items button{
+        padding: 1.3em 2.5em;
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+
+    .about-img{
+        width: 55%;
+    }
+
+    .services-content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex1{
+        width: unset;
+    }
+
+    .ship{
+        width: 71%;
+    }
+
+    .s3{
+        padding: 4em 0 5em;
+    }
+
+    .skew-c{
+        top: -23%;
+    }
+
+    .services-heading-content h2{
+        font-size: 2.2rem;
+    }
+
+    .services-heading-content{
+        margin-bottom: 1.3em;
+    }
+
+    .services-info i{
+        font-size: 3rem;
+    }
+
+
 }

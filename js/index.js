@@ -4,8 +4,8 @@ const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 const testimonialCarousel = document.querySelector('.testimonial-carousel')
 const testimonial = document.querySelectorAll('.testimonial')
-const arrowRight = document.querySelector('.bx-chevron-right')
-const arrowLeft = document.querySelector('.bx-chevron-left')
+const arrowRight = document.querySelector('#arrow-right')
+const arrowLeft = document.querySelector('#arrow-left')
 
 let counter = 1;
 const size = wrapper[0].clientWidth;
