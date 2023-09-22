@@ -1,7 +1,7 @@
 const wrapper = document.querySelectorAll(".wrapper");
 const carouselContainer = document.querySelector(".carousel-container");
-const prevBtn = document.querySelector("#prevBtn");
-const nextBtn = document.querySelector("#nextBtn");
+const prevBtn = document.querySelector("#left");
+const nextBtn = document.querySelector("#right");
 const testimonialCarousel = document.querySelector('.testimonial-carousel')
 const testimonial = document.querySelectorAll('.testimonial')
 const arrowRight = document.querySelector('#arrow-right')
@@ -14,19 +14,19 @@ console.log(size)
 
 carouselContainer.style.transform = "translateX(" + -size * counter + "px)";
 
-// nextBtn.addEventListener("click", () => {
-//   if (counter >= 6) return;
-//   carouselContainer.style.transition = "transform 0.3s ease-in-out";
-//   counter++;
-//   carouselContainer.style.transform = "translateX(" + -size * counter + "px)";
-// });
+nextBtn.addEventListener("click", () => {
+  if (counter >= 4) return;
+  carouselContainer.style.transition = "transform 0.3s ease-in-out";
+  counter++;
+  carouselContainer.style.transform = "translateX(" + -size * counter + "px)";
+});
 
-// prevBtn.addEventListener("click", () => {
-//   if (counter <= 0) return;
-//   carouselContainer.style.transition = "transform 0.3s ease-in-out";
-//   counter--;
-//   carouselContainer.style.transform = "translateX(" + -size * counter + "px)";
-// });
+prevBtn.addEventListener("click", () => {
+  if (counter <= 0) return;
+  carouselContainer.style.transition = "transform 0.3s ease-in-out";
+  counter--;
+  carouselContainer.style.transform = "translateX(" + -size * counter + "px)";
+});
 
 carouselContainer.addEventListener("transitionend", () => {
   if (wrapper[counter].id === "lastClone") {

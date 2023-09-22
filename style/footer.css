@@ -130,3 +130,28 @@ footer{
         align-items: center;
     }
 }
+
+@media screen and (min-width: 1024px){
+
+    .footer-container{
+        padding: 2em 0 0;
+    }
+
+    .footer-header h1{
+        margin: 0;
+    }
+
+    .footer-header{
+        text-align: left;
+        display: none;
+    }
+
+    .quicklinks h2{
+        margin-bottom: 1em;
+    }
+
+    .footer-services h2{
+        font-weight: 400;
+        margin-bottom: 1em;
+    }
+}

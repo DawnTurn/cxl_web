@@ -425,9 +425,6 @@ body{
 .choose-contents a h3{
     font-weight: 400;
     position: relative;
-}
-
-.choose-contents a h3{
     display: flex;
     align-items: center;
     gap: .5em;
@@ -1019,7 +1016,7 @@ body{
     }
 
     .s1{
-        height: 80vh;
+        height: 85vh;
     }
 
     .hero-container{
@@ -1058,10 +1055,39 @@ body{
         background-position: center;
     }
 
+    #left, #right{
+        position: absolute;
+        color: black;
+        padding: .5em;
+        border-radius: 50%;
+        background: white;
+        font-size: 1.5rem;
+        z-index: 999;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    #left{
+        top: 75%;
+        left: 11%;
+        transform: translate(-11%, -75%);
+    }
+
+    #right{
+        top: 75%;
+        left: 18%;
+        transform: translate(-18%, -75%);
+    }
+
+    #left:hover, #right:hover{
+        background: var(--primary2);
+        color: white;
+    }
+
     .hero-contents h1{
         margin: unset;
         width: 65%;
-        font-size: 3.3rem;
+        font-size: 3rem;
     }
 
     .hero-contents p{
@@ -1075,7 +1101,7 @@ body{
     }
 
     .solutions{
-        top: 81%;
+        top: 85%;
         width: 1020px;
     }
 
@@ -1122,7 +1148,7 @@ body{
         display: flex;
         align-items: center;
         gap: 6em;
-        padding: 3em 0 5em;
+        padding: 3em 1em 5em;
     }
 
     .about-items{
@@ -1178,5 +1204,103 @@ body{
         font-size: 3rem;
     }
 
+    .s4{
+        padding: 5em 0;
+    }
+
+    .c6-heading h2{
+        font-size: 2.2rem;
+    }
+
+    .c6-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4em;
+    }
+
+    .c6-header button{
+        cursor: pointer;
+    }
+
+    .choose{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .choose-contents a h3{
+        font-size: 1.3rem;
+    }
+
+    .choose-contents a h3 i{
+        font-size: 1.2rem;
+    }
+
+    .choose-contents{
+        width: 50%;
+    }
+
+    .s5{
+        padding: 6em 0;
+    }
+
+    .c7-heading h2{
+        font-size: 2.2rem;
+    }
+
+    .c7-heading p{
+        width: 65%;
+        font-size: .9rem;
+        margin-bottom: 4em;
+    }
+
+    .goals-items{
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+    }
+
+    .goals-content{
+        justify-content: space-between;
+    }
+
+    .s-testimonials{
+        padding: 5em 0;
+    }
+
+    .c-testimonials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .t-heading{
+        width: 38%;
+    }
+
+    .testimonial-container{
+        width: 48%;
+    }
+
+    .t-heading h2{
+        font-size: 2.2rem;
+    }
+
+    .t-heading p{
+        font-size: .9rem;
+    }
+
+    .s6{
+        padding: 8em 0;
+    }
+
+    .contact h2{
+        font-size: 3.1rem;
+    }
+
+    .contact button{
+        margin-top: 1.5em;
+    }
 
 }
