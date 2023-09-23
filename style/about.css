@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 1em;
+}
+
+.s6{
+    padding: 2em 0;
+    background: linear-gradient(0deg, #00142284, #00142284), url(../images/global-business-container-cargo.jpeg);
+    background-size: cover;
+    background-position: left;
+}
+
+.contact{
+    text-align: center;
+    color: white;
+}
+
+.contact h1{
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.contact p{
+    font-size: var(--paragraph-size);
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.contact h1 span{
+    color: var(--primary1);
+}
+
+.contact h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+.contact button{
+    padding: 1em 2em;
+    margin-top: .8em;
+    background: var(--primary1);
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: .1em;
+}
+
+@media screen and (min-width: 768px){
+
+    .container{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .s6{
+        padding: 4em 0;
+    }
+
+    .contact{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contact h2{
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container{
+        max-width: 1024px;
+    }
+
+    .s6{
+        padding: 8em 0;
+    }
+
+    .contact h2{
+        font-size: 3.1rem;
+    }
+
+    .contact button{
+        margin-top: 1.5em;
+    }
+}
