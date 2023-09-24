@@ -1078,13 +1078,13 @@ body{
 
     #left{
         top: 75%;
-        left: 11%;
+        left: 10%;
         transform: translate(-11%, -75%);
     }
 
     #right{
         top: 75%;
-        left: 18%;
+        right: 10%;
         transform: translate(-18%, -75%);
     }
 
