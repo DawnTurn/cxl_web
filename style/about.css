@@ -5,13 +5,199 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --primary1: #00bbff;
+    --primary2: #0074c1;
+    --primary3: #00719c;
+    --primary4: #002743;
+    --back-color: #f9fcff;
+    --paragraph-size: .8rem;
+}
+
+body{
+    background: var(--back-color);
+}
+
 .container{
     padding: 1em;
 }
 
+.s1{
+    height: 40vh;
+    background: linear-gradient(0deg, #00000077, #00000077), url(../images/airplane-cargo.jpg);
+    background-size: cover;
+    background-position: right;
+    color: white;
+}
+
+.c1{
+    height: 100%;
+}
+
+.hero-contents{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contents h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: .3em;
+}
+
+.hero-links{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+
+.hero-links a{
+    text-decoration: none;
+    color: white;
+    font-size: .85rem;
+}
+
+.hero-links a:hover{
+    text-decoration: underline;
+}
+
+.hero-links span{
+    font-size: .85rem;
+    text-decoration: underline;
+    color: var(--primary1);
+}
+
+
+
+/* s2  about-section */
+
+.s2{
+    padding: 3em 0;
+}
+
+.about-items{
+    margin-bottom: 3em;
+}
+
+.about-items h2{
+    font-weight: 500;
+    margin-bottom: .5em;
+    position: relative;
+}
+
+.about-items h2::after{
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: 4em;
+    top: -10%;
+    left: -3%;
+    background: #00000017;
+    transform: skewY(40deg);
+}
+
+.about-items span{
+    color: var(--primary1);
+}
+
+.about-items p{
+    font-weight: 300;
+    letter-spacing: .8px;
+    line-height: 2em;
+    font-size: var(--paragraph-size);
+    margin-bottom: 1.5em;
+}
+
+.about-items button{
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: .2em;
+    background: #00000028;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.about-items button:hover{
+    background: var(--primary2);
+    color: white;
+}
+
+.about-img{
+    width: 100%;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: .2em;
+    height: 20em;
+    object-fit: cover;
+    object-position: left;
+}
+
+/* s3 - get to know about us */
+
+.s3{
+    padding: 2em 0;
+    background: #00212e12;
+}
+
+.get-to-know h2{
+    font-weight: 500;
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+.get-to-know h2 span{
+    color: var(--primary1);
+}
+
+.get-to-know p{
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 2em;
+    letter-spacing: .9px;
+}
+
+/* s4 - vision */
+
+.s4{
+    width: 100%;
+    padding: 0 0 2em;
+    background: var(--primary4);
+    color: white;
+}
+
+.s4 img{
+    width: 100%;
+    height: 16em;
+    object-fit: cover;
+    object-position: top;
+}
+
+.vision h2{
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.vision h2 span{
+    color: var(--primary1);
+}
+
+.vision p{
+    font-weight: 300;
+    line-height: 2em;
+    font-size: .8rem;
+    letter-spacing: .9px;
+}
+
+/* s6 - contact */
+
 .s6{
     padding: 2em 0;
-    background: linear-gradient(0deg, #00142284, #00142284), url(../images/global-business-container-cargo.jpeg);
+    background: linear-gradient(0deg, #00142246, #00142246), url(../images/road-ship-cargo.jpg);
     background-size: cover;
     background-position: left;
 }
@@ -55,12 +241,81 @@
     border-radius: .1em;
 }
 
+
 @media screen and (min-width: 768px){
 
     .container{
         max-width: 768px;
         margin: 0 auto;
     }
+
+    .hero-contents{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero-contents h1{
+        font-size: 2rem;
+    }
+
+    /* s2 */
+
+    .s2{
+        padding: 3em 0;
+    }
+
+    .about-items{
+        width: 90%;
+        margin: 0 auto 3em;
+    }
+
+    .about-items h2{
+        font-size: 1.9rem;
+    }
+
+    .about-items p{
+        font-size: .85rem;
+        margin-bottom: 1.5em;
+    }
+
+    .about-img img{
+        height: 30em;
+    }
+
+    /* s3 */
+    .s3{
+        padding: 3em 0;
+    }
+
+    .get-to-know h2{
+        font-size: 1.9rem;
+    }
+
+    .get-to-know p{
+        font-size: .85rem;
+    }
+
+    /* s4 */
+
+    .s4 img{
+        height: 23em;
+        object-position: center;
+    }
+
+    .vision{
+        padding: 1em 0;
+    }
+
+    .vision h2{
+        font-size: 1.9rem;
+    }
+
+    .vision p{
+        font-size: .9rem;
+    }
+    
+    /* s6 */
 
     .s6{
         padding: 4em 0;
@@ -79,8 +334,92 @@
 @media screen and (min-width: 1024px) {
 
     .container{
-        max-width: 1024px;
+        max-width: 1200px;
     }
+
+    .hero-contents h1{
+        font-size: 3rem;
+    }
+
+    /* s2 */
+
+    .c2{
+        display: flex;
+        align-items: center;
+        gap: 6em;
+        padding: 3em 1em 3em;
+    }
+
+    .about-items{
+        width: 45%;
+        margin: 0;
+    }
+
+    .about-items h2{
+        width: 90%;
+        font-size: 2.1rem;
+    }
+
+    .about-items button{
+        padding: 1.3em 2.5em;
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+
+    .about-img{
+        width: 55%;
+    }
+
+    /* s3 */
+
+    .s3{
+        padding: 4em 0 5em;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .get-to-know h2{
+        font-size: 2.1rem;
+        width: 50%;
+    }
+
+    .get-to-know p{
+        font-size: .9rem;
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 1;
+    }
+
+    .skew-c{
+        position: absolute;
+        width: 15em;
+        height: 25em;
+        top: -20%;
+        right: 10%;
+        background: #f9fcff;
+        transform: skewY(30deg);
+    }
+
+    /* s4 */
+
+    .s4{
+        padding: 0 0 3em;
+    }
+
+    .s4 img{
+        height: 27em;
+    }
+
+    .vision{
+        padding: 2em 0;
+    }
+
+    .vision p{
+        font-size: 1rem;
+    }
+
+
+    /* s6 */
 
     .s6{
         padding: 8em 0;

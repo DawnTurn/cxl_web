@@ -35,6 +35,10 @@ body{
     padding: 1em;
 }
 
+#left, #right{
+    display: none;
+}
+
 .c1{
     background: linear-gradient(0deg, #01426da2, #01426da2), url(../images/cargo-ship-sea.jpeg);
     background-size: cover;
@@ -157,6 +161,10 @@ body{
 
 /* second-page - about-page */
 
+.s2{
+    padding: 1em 0;
+}
+
 .about-items{
     margin-bottom: 3em;
 }
@@ -185,9 +193,9 @@ body{
 .about-items p{
     font-weight: 300;
     letter-spacing: .8px;
-    line-height: 1.7em;
+    line-height: 2em;
     font-size: var(--paragraph-size);
-    margin-bottom: .8em;
+    margin-bottom: 1.5em;
 }
 
 .about-items button{
@@ -1056,6 +1064,7 @@ body{
     }
 
     #left, #right{
+        display: unset;
         position: absolute;
         color: black;
         padding: .5em;
