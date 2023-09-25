@@ -346,8 +346,36 @@ body{
 @media screen and (min-width: 768px){
 
     .container{
-        max-width: 768px;
+        max-width: 850px;
         margin: 0 auto;
+    }
+
+    .hero-contents h1 {
+        font-size: 2rem;
+    }
+
+    .list{
+        flex-direction: row;
+    }
+
+    .service1{
+        width: 50%;
+    }
+
+    .services-list h1{
+        font-size: 1.9rem;
+    }
+
+    .service1 h3::after{
+        bottom: -20%;
+    }
+
+    .c3{
+        flex-direction: row;
+    }
+
+    .packaging{
+        width: 50%;
     }
 
     .hero-contents {
@@ -356,8 +384,37 @@ body{
         justify-content: space-between;
     }
 
-    .hero-contents h1 {
-        font-size: 2rem;
+    .added-list h2{
+        font-size: 1.7rem;
+    }
+
+    .added-list p{
+        font-size: .85rem;
+    }
+
+    .c5-header h2{
+        font-size: 1.9rem;
+    }
+
+    .c5-header p{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .c5 p{
+        font-size: .85rem;
+    }
+
+    .flex{
+        flex-direction: row;
+    }
+
+    .transport-contents{
+        width: 50%;
+    }
+
+    .content-head{
+        height: 30em;
     }
 
     .s6{
@@ -383,6 +440,92 @@ body{
     .hero-contents h1 {
         font-size: 3rem;
     }
+
+    .s2{
+        padding: 4em 0;
+    }
+
+    .services-list h1{
+        font-size: 2.2rem;
+        width: 70%;
+    }
+
+    .warehousing h2{
+        font-size: 1.7rem;
+    }
+
+    .service1 h3{
+        font-size: 1.35rem;
+    }
+
+    .service1 p{
+        font-size: .9rem;
+    }
+
+    .s3{
+        padding: 4em 0;
+    }
+
+    .packaging h2{
+        font-size: 1.7rem;
+    }
+
+    .packaging p{
+        font-size: .9rem;
+    }
+
+    .c4{
+        display: flex;
+    }
+
+    .added-list{
+        padding: 9em 2em 2em;
+        -webkit-backdrop-filter: blur();
+        backdrop-filter: blur();
+        border-left: 1px solid #00709c9d;
+        transition: .3s;
+    }
+
+    .added-list h2{
+        transform: translateY(280px);
+        transition: .4s;
+    }
+
+    .added-list p{
+        opacity: 0;
+    }
+
+    .added-list:hover{
+        -webkit-backdrop-filter: blur(.8em);
+        backdrop-filter: blur(.8em);
+    }
+
+    .added-list:hover h2{
+        transform: translateY(0);
+    }
+
+    .added-list:hover p{
+        opacity: 1;
+        transition: .3s .2s;
+    }
+
+    .c5-header h2{
+        font-size: 2.2rem;
+    }
+
+    .c5 p{
+        font-size: .9rem;
+    }
+
+    .c5-header{
+        margin: 4em;
+    }
+
+    .content-head{
+        height: 35em;
+        margin-bottom: 3em;
+    }
+
 
     .s6{
         padding: 8em 0;
