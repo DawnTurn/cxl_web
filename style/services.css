@@ -22,10 +22,6 @@ body{
     padding: 1em;
 }
 
-.container {
-    padding: 1em;
-}
-
 .s1 {
     height: 40vh;
     background: linear-gradient(0deg, #00000058, #00000058), url(../images/close-up-blurry-hand-holding-pencil.jpg);
@@ -350,6 +346,12 @@ body{
         margin: 0 auto;
     }
 
+    .hero-contents {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .hero-contents h1 {
         font-size: 2rem;
     }
@@ -378,11 +380,7 @@ body{
         width: 50%;
     }
 
-    .hero-contents {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    
 
     .added-list h2{
         font-size: 1.7rem;
@@ -479,16 +477,17 @@ body{
     }
 
     .added-list{
-        padding: 9em 2em 2em;
+        padding: 15em 2em 3em;
         -webkit-backdrop-filter: blur();
         backdrop-filter: blur();
         border-left: 1px solid #00709c9d;
         transition: .3s;
+        width: 100%;
     }
 
     .added-list h2{
         transform: translateY(280px);
-        transition: .4s;
+        transition: .65s;
     }
 
     .added-list p{
@@ -506,7 +505,7 @@ body{
 
     .added-list:hover p{
         opacity: 1;
-        transition: .3s .2s;
+        transition: .5s .45s;
     }
 
     .c5-header h2{
@@ -525,7 +524,6 @@ body{
         height: 35em;
         margin-bottom: 3em;
     }
-
 
     .s6{
         padding: 8em 0;

@@ -39,7 +39,6 @@ footer{
 
 .address p{
     display: flex;
-    align-items: center;
     gap: .3em;
 }
 
